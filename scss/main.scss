@@ -1,0 +1,136 @@
+.container{
+    min-width: 100%;
+}
+
+.seccion{
+    min-width: 100%;
+    .titulo{
+        padding: 35px;
+        margin-bottom: 20px;
+        display: flex; 
+        justify-content: center;
+    }
+    .row{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        animation-name: expandir;
+        animation-duration: 1s;
+        animation-delay: 0;
+        animation-iteration-count: 1;    
+        animation-timing-function: ease-in;
+    }
+    @keyframes expandir{
+        5%{
+            transform: scale(1.05);
+        }
+        10%{
+            transform: scale(1.10);
+        }
+        
+        0%{
+            transform: scale(1);
+        }
+    }
+}
+
+.prductosTutoriales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 70px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.botonMasProductos{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+.masProductos{
+    padding: 1%;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: palevioletred;
+    cursor: pointer;
+    }
+.contacto{
+        display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    grid-area: conta;
+    justify-items: center;
+    text-align: -webkit-center;
+    padding: 0 20% 0 10%;
+}
+    
+.nombre{
+    padding: 5px;
+}
+.email{
+    padding: 5px;
+    margin-top: 10px;
+}
+.asunto{
+    padding: 5px;
+    margin-top: 10px;
+}
+.mensaje{
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.encabezadoContacto{    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.loren{
+    display: block;
+    grid-area: loren;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 13% 20%;
+    }
+
+#titulo-contacto{
+    grid-area: titulo;
+
+    .titulo-contact{
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+.instaContacto{
+    text-decoration: none;
+    color: black;
+    }
+#contactoArea{
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "redes redes"
+        "loren conta";
+    grid-template-columns: 1fr 2fr;
+}
+
+.redesConta{
+    padding: 3%;
+
+}
+#enviar{
+    margin-right: 37%;
+}

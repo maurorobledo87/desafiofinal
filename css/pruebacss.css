@@ -1,0 +1,437 @@
+.iconoinstagram {
+  color: #ee55da; }
+
+.iconofacebook {
+  color: #3a5795; }
+
+.iconotwitter {
+  color: #55acee; }
+
+.iconosend-mail {
+  color: #fc3737; }
+
+.contBotones {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-around;
+  align-items: center; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: grid;
+  grid-template-rows: 0.9fr auto 1fr; }
+
+.encabezado {
+  background: #e6b9cd;
+  background: linear-gradient(56deg, rgba(230, 185, 205, 0.896796) 43%, rgba(233, 148, 228, 0.0368522) 100%);
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  grid-template-columns: 20% 60% 20%;
+  z-index: 999; }
+  .encabezado .buscador {
+    grid-row: 1;
+    grid-column: 1;
+    height: 17px;
+    place-self: center; }
+  .encabezado .contLogo {
+    justify-self: center; }
+    .encabezado .contLogo .logo {
+      grid-column: 2;
+      grid-row: 1;
+      width: 200px;
+      height: 163px; }
+  .encabezado .contBotones {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center; }
+    .encabezado .contBotones .boton {
+      padding: 5px;
+      background: transparent;
+      cursor: pointer;
+      grid-column: 3;
+      grid-row: 1; }
+      .encabezado .contBotones .boton:hover {
+        background-color: #fde1bc; }
+  .encabezado .navegacion {
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+    align-self: center; }
+    .encabezado .navegacion .listaNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .encabezado .navegacion .listaNav .nav-items {
+        padding: 1%;
+        list-style: none; }
+        .encabezado .navegacion .listaNav .nav-items :hover {
+          transform: scale(1.1); }
+        .encabezado .navegacion .listaNav .nav-items .nav-list {
+          text-decoration: none;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color: black;
+          font-weight: bold;
+          transition: all 1s; }
+
+.pieDePag {
+  display: flex;
+  background-color: lightgray;
+  grid-row: 3;
+  margin-top: 7%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  grid-column-gap: 150px;
+  min-width: 100%; }
+  .pieDePag .listaFooter {
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold; }
+    .pieDePag .listaFooter .contList {
+      margin: 15px 0; }
+      .pieDePag .listaFooter .contList .linkItems {
+        color: black;
+        text-decoration: none; }
+  .pieDePag .contRedes {
+    margin: 15px 0; }
+    .pieDePag .contRedes .icono {
+      width: 50px; }
+
+.container {
+  min-width: 100%; }
+
+.seccion {
+  min-width: 100%; }
+  .seccion .titulo {
+    padding: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; }
+  .seccion .row {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    animation-name: expandir;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in; }
+
+@keyframes expandir {
+  5% {
+    transform: scale(1.05); }
+  10% {
+    transform: scale(1.1); }
+  0% {
+    transform: scale(1); } }
+
+.prductosTutoriales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 70px 80px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900; }
+
+.botonMasProductos {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%; }
+
+.masProductos, .boton-enviar {
+  padding: 1%;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: palevioletred;
+  cursor: pointer; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  grid-area: conta;
+  justify-items: center;
+  text-align: -webkit-center;
+  padding: 0 20% 0 10%; }
+
+.nombre {
+  padding: 5px; }
+
+.email {
+  padding: 5px;
+  margin-top: 10px; }
+
+.asunto {
+  padding: 5px;
+  margin-top: 10px; }
+
+.mensaje {
+  padding: 5px;
+  margin-top: 10px; }
+
+.encabezadoContacto {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  grid-area: redes;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%; }
+
+.loren {
+  display: block;
+  grid-area: loren;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 13% 20%; }
+
+#titulo-contacto {
+  grid-area: titulo; }
+  #titulo-contacto .titulo-contact {
+    padding: 15px;
+    text-align: center; }
+
+.instaContacto {
+  text-decoration: none;
+  color: black; }
+
+#contactoArea {
+  display: grid;
+  grid-template-areas: "titulo titulo" "redes redes" "loren conta";
+  grid-template-columns: 1fr 2fr; }
+
+.redesConta {
+  padding: 3%; }
+
+#enviar {
+  margin-right: 37%; }
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto; }
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+
+.title-form {
+  font-size: 17px;
+  color: #4CAF50; }
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px; }
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer; }
+
+.form button:hover, .form button:active, .form button:focus {
+  background: #4CAF50; }
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px; }
+
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none; }
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto; }
+
+.container .info {
+  margin: 50px auto;
+  text-align: center; }
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a; }
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px; }
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none; }
+
+.container .info span .fa {
+  color: #EF3B3A; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+  a :visited {
+    text-decoration: none; }
+  a :hover {
+    color: #FFFFFF; }
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .encabezado {
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 25% 50% 25%; }
+  .pieDePag {
+    grid-column-gap: 56px;
+    margin-top: 10%;
+    height: 75%; }
+  .contList {
+    text-align: center; }
+  .redes {
+    font-size: larger; }
+  .icono {
+    width: 35px; } }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .pieDePag {
+    grid-column-gap: 44px;
+    margin-top: 15%;
+    height: 67%; }
+  .contList {
+    text-align: center; }
+  .redes {
+    font-size: larger; }
+  .icono {
+    width: 35px; }
+  .encabezado {
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 20% 60% 20%; }
+  .logo {
+    width: 172px;
+    height: 134px; }
+  body {
+    grid-template-rows: 0.85fr auto 1fr; }
+  .buscador {
+    width: 118px; }
+  .contBotones {
+    flex-direction: column; }
+  .ubica {
+    display: none; } }
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  .pieDePag {
+    height: 62%;
+    margin-top: 22%; }
+  .ubica {
+    display: none; }
+  .contList {
+    text-align: center; }
+  .redes {
+    font-size: larger; }
+  .icono {
+    width: 35px; }
+  #header {
+    display: grid;
+    grid-template-areas: "a b c" "d d d"; }
+  .logo {
+    width: 182px;
+    height: 148px;
+    grid-area: b; }
+  .buscador {
+    grid-area: a;
+    width: inherit; }
+  .contBotones {
+    grid-area: c;
+    flex-direction: column; }
+  .navegacion {
+    grid-area: d; }
+  .titulo {
+    font-size: 19px; } }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .encabezado {
+    display: flex;
+    align-items: center;
+    justify-items: stretch;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 380px; }
+  .buscador {
+    height: 11px;
+    width: 98px;
+    font-size: xx-small; }
+  .pieDePag {
+    height: 62%;
+    margin-top: 22%;
+    grid-column-gap: 58px; }
+  .ubica {
+    display: none; }
+  .contList {
+    text-align: center; }
+  .redes {
+    font-size: larger; }
+  .icono {
+    width: 35px; }
+  .titulo {
+    font-size: 15px; }
+  .contacto {
+    justify-content: start;
+    grid-area: auto;
+    margin-left: 56px;
+    padding: 0;
+    margin-top: 10px; }
+  .prductosTutoriales {
+    flex-direction: column;
+    margin: 31px;
+    text-align-last: center; }
+  .masProductos, .boton-enviar {
+    margin-left: -52px;
+    margin-bottom: 51px; }
+  .listaNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; }
+  .encabezadoContacto {
+    display: flex;
+    flex-direction: column; }
+  .loren {
+    display: none; } }
