@@ -16,22 +16,22 @@
 <body>
     <!-- Encabezado del sitio  -->
     <header class="encabezado" id="header">
-        <input class="buscador"    type="text" placeholder="buscar"> 
+        <input class="buscador" type="text" placeholder="buscar"> 
         <a class="contLogo" href="index.html">
             <img class="logo" src="./imagenes/logoNuevo.jpg" alt="logo">
         </a>
-        <div class="contBotones">
+        <div id="botonesCont" class="contBotones">
             <a href="paginas/registrarse.html">
                 <button class="boton">Crear cuenta</button>
             </a>
             <a href="paginas/iniciarsesion.html">
                 <button class="boton">Iniciar sesion</button>
             </a>
-        </div>        
-        <nav class="navegacion">
+        </div>               
+        <nav id="nav-menu" class="navegacion">
             <ul class="listaNav">
                 <li class="nav-items">
-                    <a class="nav-list" href="./index.html">Inicio</a> 
+                    <a class="nav-list" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-items">
                     <a class="nav-list" href="./paginas/productos.html">Productos</a> 
@@ -44,6 +44,18 @@
                 </li>
             </ul>   
         </nav>
+        <div class="dropdown" id="menu-habur">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i id="hambur-nav" class="fas fa-bars barras"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+              <li><a class="dropdown-item"  href="./paginas/productos.html">Productos</a></li>
+              <li><a class="dropdown-item" href="./paginas/tutoriales.html">Tutoriales Gratuitos</a></li>
+              <li><a class="dropdown-item" href="./paginas/contacto.html">Contactos</a></li>
+            </ul>
+          </div>
+
     </header>
     <!-- Seccion principal de catalogo de productos y tutoriales  -->
     <section class="container seccion">

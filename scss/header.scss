@@ -5,7 +5,7 @@
 body{
     display: grid;
     grid-template-rows: 0.9fr auto 1fr;
-    
+    height: 100%;
 }
 .encabezado{
     background: $background-header;   
@@ -78,7 +78,10 @@ body{
             }
         }
     }  
-                 
+    .dropdown{
+        display: none;
+    }     
+          
 }
 
     

@@ -1,5 +1,32 @@
 /* RESPONSIVE */
 @media screen and (min-width:768px) and (max-width:1023px) {
+    #nav-menu{
+        display: none;
+    }
+    #menu-habur{
+        margin-top: 10px;
+        margin-left: 15px;
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .buscador{
+        display: none;
+    }
+    #nav-hambur{
+        flex-direction: column;
+        background-color: antiquewhite;
+        margin-left: 15%;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    #hambur-nav{
+        display: block;        
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 15%;
+        margin-top: 4%;
+    }
     .encabezado{
         grid-template-rows: 80% 20%;
         grid-template-columns: 25% 50% 25% ;
@@ -18,8 +45,38 @@
     .icono{
         width: 35px ;
     }
+    #botonesCont{
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:600px) and (max-width:767px){
+    #nav-menu{
+        display: none;
+    }
+    #menu-habur{
+        margin-top: 10px;
+        margin-left: 15px;
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .buscador{
+        display: none;
+    }
+    #nav-hambur{
+        flex-direction: column;
+        background-color: antiquewhite;
+        margin-left: 15%;
+        padding-left: 0;
+        margin-top: 37%;
+    }
+    #hambur-nav{
+        display: block;        
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 15%;
+        margin-top: 4%;
+    }
     .pieDePag{
         grid-column-gap: 44px;
         margin-top: 15%;
@@ -36,7 +93,7 @@
     }
     .encabezado{
         grid-template-rows: 80% 20%;
-        grid-template-columns: 20% 60% 20% ;
+        grid-template-columns: 20% 54% 20% ;
     }
     .logo{
         width: 172px;
@@ -45,10 +102,7 @@
     body{
         grid-template-rows: 0.85fr auto 1fr;
     }
-    .buscador{
-        width: 118px;
-    }
-    .contBotones{
+    #botonesCont{
         flex-direction: column;
     }
     .ubica{
@@ -56,6 +110,36 @@
     }
 }
 @media screen and (min-width:480px) and (max-width:599px){
+    #nav-menu{
+        display: none;
+    }
+    #menu-habur{
+        margin-top: 10px;
+        margin-left: 15px;
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .buscador{
+        display: none;
+    }
+    #nav-hambur{
+        flex-direction: column;
+        background-color: antiquewhite;
+        margin-left: 15%;
+        padding-left: 0;
+        margin-top: 23%;
+    }
+    #hambur-nav{
+        display: block;        
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 15%;
+        margin-top: 4%;
+    }
+    .encabezado{
+        grid-template-columns: 20% 54% 20%;
+    }
     .pieDePag{
         height: 62%;
         margin-top: 22%;
@@ -88,7 +172,7 @@
         grid-area: a;
         width: inherit;
     }
-    .contBotones{
+    #botonesCont{
         grid-area: c;
         flex-direction: column;
     }
@@ -100,8 +184,17 @@
     }
 }
 @media screen and (min-width:320px) and (max-width:479px){
-    .encabezado{
-    
+    #nav-menu{
+        display: none;
+    }
+    #menu-habur{
+        margin-top: 10px;
+        margin-left: 15px;
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .encabezado{    
     display: flex;
     align-items: center;
     justify-items: stretch;
@@ -110,61 +203,56 @@
     flex-wrap: wrap;
     height: 380px;
     }
-    .buscador{
-        height: 11px;
-        width: 98px;
-        font-size: xx-small;
-    }
     
-        .pieDePag{
-            height: 62%;
-            margin-top: 22%;
-            grid-column-gap: 58px;
+    .pieDePag{
+        height: 62%;
+        margin-top: 22%;
+        grid-column-gap: 58px;
+    }
+    .ubica{
+        display: none;
+    }
+    .contList{
+        text-align: center;
+    }
+    .redes{
+        font-size: larger;
+    }
+    .icono{
+        width: 35px ;
+    }     
+    .titulo{
+        font-size: 15px;
+    }
+    .contacto{
+        justify-content: start;
+        grid-area: auto;
+        margin-left: 56px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .prductosTutoriales{
+        flex-direction: column;
+        margin: 31px;
+        text-align-last: center;
+    }
+    .masProductos{
+        margin-left: -52px;
+        margin-bottom: 51px;
+    }
+    .listaNav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .encabezadoContacto{
+        display: flex;
+        flex-direction: column;
         }
-        .ubica{
-            display: none;
-        }
-        .contList{
-            text-align: center;
-        }
-        .redes{
-            font-size: larger;
-        }
-        .icono{
-            width: 35px ;
-        }     
-        .titulo{
-            font-size: 15px;
-        }
-        .contacto{
-            justify-content: start;
-            grid-area: auto;
-            margin-left: 56px;
-            padding: 0;
-            margin-top: 10px;
-        }
-        .prductosTutoriales{
-            flex-direction: column;
-            margin: 31px;
-            text-align-last: center;
-        }
-        .masProductos{
-            margin-left: -52px;
-            margin-bottom: 51px;
-        }
-        .listaNav{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .encabezadoContacto{
-            display: flex;
-            flex-direction: column;
-            }
-        .loren{
-            display: none;
-        }    
+    .loren{
+        display: none;
+    }    
         
 
         

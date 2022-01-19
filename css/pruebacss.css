@@ -23,7 +23,8 @@
 
 body {
   display: grid;
-  grid-template-rows: 0.9fr auto 1fr; }
+  grid-template-rows: 0.9fr auto 1fr;
+  height: 100%; }
 
 .encabezado {
   background: #e6b9cd;
@@ -81,6 +82,8 @@ body {
           color: black;
           font-weight: bold;
           transition: all 1s; }
+  .encabezado .dropdown {
+    display: none; }
 
 .pieDePag {
   display: flex;
@@ -91,7 +94,9 @@ body {
   align-items: center;
   justify-content: space-around;
   grid-column-gap: 150px;
-  min-width: 100%; }
+  min-width: 100%;
+  bottom: -96px;
+  position: relative; }
   .pieDePag .listaFooter {
     list-style: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -315,6 +320,28 @@ a {
 
 /* RESPONSIVE */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  #nav-menu {
+    display: none; }
+  #menu-habur {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: block;
+    grid-column: 1;
+    grid-row: 1; }
+  .buscador {
+    display: none; }
+  #nav-hambur {
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin-left: 15%;
+    padding-left: 0;
+    margin-top: 15px; }
+  #hambur-nav {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 15%;
+    margin-top: 4%; }
   .encabezado {
     grid-template-rows: 80% 20%;
     grid-template-columns: 25% 50% 25%; }
@@ -327,9 +354,33 @@ a {
   .redes {
     font-size: larger; }
   .icono {
-    width: 35px; } }
+    width: 35px; }
+  #botonesCont {
+    flex-direction: column; } }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
+  #nav-menu {
+    display: none; }
+  #menu-habur {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: block;
+    grid-column: 1;
+    grid-row: 1; }
+  .buscador {
+    display: none; }
+  #nav-hambur {
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin-left: 15%;
+    padding-left: 0;
+    margin-top: 37%; }
+  #hambur-nav {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 15%;
+    margin-top: 4%; }
   .pieDePag {
     grid-column-gap: 44px;
     margin-top: 15%;
@@ -342,20 +393,42 @@ a {
     width: 35px; }
   .encabezado {
     grid-template-rows: 80% 20%;
-    grid-template-columns: 20% 60% 20%; }
+    grid-template-columns: 20% 54% 20%; }
   .logo {
     width: 172px;
     height: 134px; }
   body {
     grid-template-rows: 0.85fr auto 1fr; }
-  .buscador {
-    width: 118px; }
-  .contBotones {
+  #botonesCont {
     flex-direction: column; }
   .ubica {
     display: none; } }
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
+  #nav-menu {
+    display: none; }
+  #menu-habur {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: block;
+    grid-column: 1;
+    grid-row: 1; }
+  .buscador {
+    display: none; }
+  #nav-hambur {
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin-left: 15%;
+    padding-left: 0;
+    margin-top: 23%; }
+  #hambur-nav {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 15%;
+    margin-top: 4%; }
+  .encabezado {
+    grid-template-columns: 20% 54% 20%; }
   .pieDePag {
     height: 62%;
     margin-top: 22%; }
@@ -377,7 +450,7 @@ a {
   .buscador {
     grid-area: a;
     width: inherit; }
-  .contBotones {
+  #botonesCont {
     grid-area: c;
     flex-direction: column; }
   .navegacion {
@@ -386,6 +459,14 @@ a {
     font-size: 19px; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  #nav-menu {
+    display: none; }
+  #menu-habur {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: block;
+    grid-column: 1;
+    grid-row: 1; }
   .encabezado {
     display: flex;
     align-items: center;
@@ -394,10 +475,6 @@ a {
     justify-content: space-around;
     flex-wrap: wrap;
     height: 380px; }
-  .buscador {
-    height: 11px;
-    width: 98px;
-    font-size: xx-small; }
   .pieDePag {
     height: 62%;
     margin-top: 22%;
